@@ -1,0 +1,15 @@
+{
+  "GrpcSettings": {
+    "DiscountUrl": "http://localhost:5003"
+  },
+  "profiles": {
+    "Discount.Grpc": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:5003"
+    }
+  }
+}
