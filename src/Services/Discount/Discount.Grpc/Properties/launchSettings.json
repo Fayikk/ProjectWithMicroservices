@@ -1,7 +1,4 @@
 {
-  "GrpcSettings": {
-    "DiscountUrl": "http://localhost:5003"
-  },
   "profiles": {
     "Discount.Grpc": {
       "commandName": "Project",
@@ -10,6 +7,14 @@
       },
       "dotnetRunMessages": "true",
       "applicationUrl": "http://localhost:5003"
+    },
+    "Docker (1)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true
     }
+  },
+  "GrpcSettings": {
+    "DiscountUrl": "http://localhost:5003"
   }
 }
