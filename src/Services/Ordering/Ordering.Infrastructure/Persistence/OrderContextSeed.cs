@@ -1,27 +1,29 @@
 ﻿using Microsoft.Extensions.Logging;
 using Ordering.Domain.Entities;
-using Ordering.Infrastructure.Persistence;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-public class OrderContextSeed
+namespace Ordering.Infrastructure.Persistence
 {
-    public static async Task SeedAsync(OrderContext orderContext, ILogger<OrderContextSeed> logger)
+    public class OrderContextSeed
     {
-        if (!orderContext.Orders.Any())
+        public static async Task SeedAsync(OrderContext orderContext, ILogger<OrderContextSeed> logger)
         {
-            orderContext.Orders.AddRange(GetPreconfiguredOrders());
-            await orderContext.SaveChangesAsync();
-            logger.LogInformation("Seed database associated with context {DbContextName}", typeof(OrderContext).Name);
+            if (!orderContext.Orders.Any())
+            {
+                orderContext.Orders.AddRange(GetPreconfiguredOrders());
+                await orderContext.SaveChangesAsync();
+                logger.LogInformation("Seed database associated with context {OrderContext}", typeof(OrderContext).Name);
+            }
         }
-    }
 
-    private static IEnumerable<Order> GetPreconfiguredOrders()
-    {
-        return new List<Order>
+        private static IEnumerable<Order> GetPreconfiguredOrders()
+        {
+            return new List<Order>
             {
                 new Order() {UserName = "swn", FirstName = "Mehmet", LastName = "Ozkaya", EmailAddress = "ezozkme@gmail.com", AddressLine = "Bahcelievler", Country = "Turkey", TotalPrice = 350 }
             };
+        }
     }
 }

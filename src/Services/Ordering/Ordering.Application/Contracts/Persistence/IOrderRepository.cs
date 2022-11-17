@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Ordering.Application.Contracts.Persistence.IAsyncRepository;
+//using static Ordering.Application.Contracts.Persistence;
 
 namespace Ordering.Application.Contracts.Persistence
 {

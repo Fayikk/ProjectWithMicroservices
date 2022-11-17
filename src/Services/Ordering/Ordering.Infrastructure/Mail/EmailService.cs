@@ -2,12 +2,8 @@
 using Microsoft.Extensions.Options;
 using Ordering.Application.Contracts.Infrastructure;
 using Ordering.Application.Models;
-using SendGrid.Helpers.Mail;
 using SendGrid;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using SendGrid.Helpers.Mail;
 using System.Threading.Tasks;
 
 namespace Ordering.Infrastructure.Mail

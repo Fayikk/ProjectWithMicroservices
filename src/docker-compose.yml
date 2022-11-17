@@ -8,6 +8,9 @@ services:
   discountdb:
     image: postgres
 
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2017-CU31-ubuntu-18.04
+
   pgadmin:
     image: dpage/pgadmin4
 
