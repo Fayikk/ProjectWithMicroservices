@@ -15,7 +15,8 @@ namespace Ordering.API
     public class Program
     {
         public static void Main(string[] args)
-                => CreateHostBuilder(args)
+        {
+            CreateHostBuilder(args)
                 .Build()
                 .MigrateDatabase<OrderContext>((context, services) =>
                 {
@@ -25,6 +26,8 @@ namespace Ordering.API
                         .Wait();
                 })
                 .Run();
+        }
+                 
 
         // EF Core uses this method at design time to access the DbContext
         public static IHostBuilder CreateHostBuilder(string[] args)
