@@ -25,9 +25,6 @@ Discount API -> http://host.docker.internal:8002/swagger/index.html
 
 Ordering API -> http://host.docker.internal:8004/swagger/index.html
 
-Shopping.Aggregator -> http://host.docker.internal:8005/swagger/index.html
-
-API Gateway -> http://host.docker.internal:8010/Catalog
 
 Rabbit Management Dashboard -> http://host.docker.internal:15672 -- guest/guest
 
