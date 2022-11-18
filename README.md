@@ -1,4 +1,4 @@
-                                                        RUN THE PROJECT                                             Author = FAYİK VEZNEDAROĞLU
+                                                        RUN THE PROJECT                           Author = FAYİK VEZNEDAROĞLU
 You will need the following tools:
 
 Visual Studio 2019-2022 Comunity 
@@ -35,13 +35,6 @@ Portainer -> http://host.docker.internal:9000 -- admin/admin1234
 
 pgAdmin PostgreSQL -> http://host.docker.internal:5050 -- admin@aspnetrun.com/admin1234
 
-Elasticsearch -> http://host.docker.internal:9200 -- To Be Develop
 
-Kibana -> http://host.docker.internal:5601 -- To Be Develop
 
-Web Status -> http://host.docker.internal:8007 -- To Be Develop
 
-Web UI -> http://host.docker.internal:8006
-
-Launch http://host.docker.internal:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
-Launch http://host.docker.internal:8006 in your browser to view the Web UI. You can use Web project in order to call microservices over API Gateway. When you checkout the basket you can follow queue record on RabbitMQ dashboard.
