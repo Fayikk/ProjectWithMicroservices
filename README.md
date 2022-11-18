@@ -35,6 +35,6 @@ Portainer -> http://host.docker.internal:9000 -- admin/admin1234
 
 pgAdmin PostgreSQL -> http://host.docker.internal:5050 -- admin@aspnetrun.com/admin1234
 
-
+MSSql Port  ----> 1434:1433
 
 
