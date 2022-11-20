@@ -11,9 +11,16 @@ Clone the repository
 Once Docker for Windows is installed, go to the Settings > Advanced option, from the Docker icon in the system tray, to configure the minimum amount of memory and CPU like so:
 Memory: 4 GB
 CPU: 2
+
 At the root directory which include docker-compose.yml files, run below command:
+
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+
 Wait for docker compose all microservices. That’s it! (some microservices need extra time to work so please wait if not worked in first shut)
+
+if you want take this project,just "docker-compose -f docker-compose.yml -f docker-compose.override.yml Kill" and "docker-compose -f docker-compose.yml -f 
+
+docker-compose.override.yml restart" do it.It is enough for this work.
 
 You can launch microservices as below urls:
 
