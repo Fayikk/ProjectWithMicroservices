@@ -16,8 +16,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		    <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
 		<PackageReference Include="MassTransit" Version="7.1.6" />
 		<PackageReference Include="MassTransit.AspNetCore" Version="7.1.6" />
 		<PackageReference Include="MassTransit.RabbitMQ" Version="7.1.6" />
@@ -29,8 +29,10 @@
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
 	</ItemGroup>
 
+
 	<ItemGroup>
 		<ProjectReference Include="..\..\..\BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj" />
+		<ProjectReference Include="..\..\Discount\Discount.Grpc\Discount.Grpc.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

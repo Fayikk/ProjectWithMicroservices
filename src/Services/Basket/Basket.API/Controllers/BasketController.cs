@@ -45,7 +45,7 @@ namespace Basket.API.Controllers
             foreach(var item in basket.Items)
             {
                 var coupon = await _discountGrpcService.GetDiscount(item.ProductName);
-                item.Price -= coupon.Amount;
+                item.Price -= (item.Price * coupon.Amount) / 100;
             }
             return Ok(await _repository.UpdateBasket(basket));  
         }
