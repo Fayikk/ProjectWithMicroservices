@@ -1,4 +1,4 @@
-                                                        RUN THE PROJECT                           Author = FAYİK VEZNEDAROĞLU
+                               RUN THE PROJECT                           Author = FAYİK VEZNEDAROĞLU
 You will need the following tools:
 
 Visual Studio 2019-2022 Comunity 
