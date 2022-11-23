@@ -1,4 +1,8 @@
                                RUN THE PROJECT                           Author = FAYİK VEZNEDAROĞLU
+
+
+![110304529-c5b70180-800c-11eb-832b-a2751b5bda76](https://user-images.githubusercontent.com/108293938/203602001-cdf6df99-6a02-4da0-8898-bc76fbe59829.png)
+
 You will need the following tools:
 
 Visual Studio 2019-2022 Comunity 
@@ -24,6 +28,8 @@ docker-compose.override.yml restart" do it.It is enough for this work.
 
 You can launch microservices as below urls:
 
+You can launch microservices as below urls:
+
 Catalog API -> http://host.docker.internal:8000/swagger/index.html
 
 Basket API -> http://host.docker.internal:8001/swagger/index.html
@@ -32,6 +38,9 @@ Discount API -> http://host.docker.internal:8002/swagger/index.html
 
 Ordering API -> http://host.docker.internal:8004/swagger/index.html
 
+Shopping.Aggregator -> http://host.docker.internal:8005/swagger/index.html
+
+API Gateway -> http://host.docker.internal:8010/Catalog
 
 Rabbit Management Dashboard -> http://host.docker.internal:15672 -- guest/guest
 
@@ -39,6 +48,7 @@ Portainer -> http://host.docker.internal:9000 -- admin/admin1234
 
 pgAdmin PostgreSQL -> http://host.docker.internal:5050 -- admin@aspnetrun.com/admin1234
 
-MSSql Port  ----> 1434:1433
+
+
 
 
